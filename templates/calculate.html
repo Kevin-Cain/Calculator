@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 align=center><b><u>CALCULATOR</u></b></h1>
+            <br>
+            <form method="post">
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Variable1:</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="var1" placeholder={{var1}}>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Variable2:</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="var2" placeholder={{var2}}>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Operation:</label>
+                    <div class="col-sm-10">
+                        <select class="form-control" id="operation">
+                            <option>{{operation}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label"><b>Result:</b></label>
+                    <div class="col-sm-10">
+                        <p>{{var1}} {{sign}} {{var2}} = {{ result }}</p>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <a href="/" type="submit" class="btn btn-secondary">Clear</a>
+                <a href="/history" type="submit" class="btn btn-secondary">History</a>
+            </form>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</body>
+
+</html>
